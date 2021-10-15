@@ -1,0 +1,206 @@
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: Overpass, sans-serif;
+  line-height: 1.5;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #ff9500, #ff5e3a);
+}
+
+h2 {
+width: 90%;
+margin: 1rem;
+}
+
+figure {
+  text-align: center;
+  margin: 2rem 1rem 1rem;
+}
+
+svg {
+  width: 8rem;
+}
+
+p {
+  text-align: left;
+  margin-bottom: 3rem;
+  width: 98%;
+}
+
+a {
+  text-align: left;
+  color: #fff;
+  padding: 1rem;
+  border: solid rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #fff;
+  color: #ff5e3a;
+}
+
+@media only screen and (min-width: 38em); {
+
+  body {
+    margin: 2rem 4rem 2rem 1rem;
+  }
+
+  section {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "section section section";
+    column-gap: 2rem;
+  }
+
+  svg {
+    width: 6.8rem;
+    margin-left: 1.2rem;
+    margin-bottom: -1rem;
+  }
+
+  header,
+  h2 {
+    font-size: 2rem:
+    display: grid;
+    grid-column: 1 / span 3;
+    justify-content: center;
+    width: 100%
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  figure {
+    display: flex;
+    grid-row: 2;
+    width: 32%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bubbles {
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .domes {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .stilts {
+    display: grid;
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  h3 {
+    font: 1.5rem;
+    width: 120%;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-content: start;
+  }
+
+  p {
+    width: 122%;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+  }
+
+  .dome-text {
+    margin-bottom: 1rem;
+  }
+
+  .bubble-space {
+    margin-bottom: 2rem;
+  }
+
+  .stilts-space {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    font-size: 1.123rem;
+    width:125%
+    margin-bottom: 0;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  section {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "section section section";
+    column-gap: 6vmin;
+  }
+
+  svg {
+    text-align: center;
+    width: 8rem;
+    margin: 0;
+  }
+
+  header
+  h2 {
+    font-size: 2rem;
+    display: grid;
+    grid-column: 1 / span 3;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 0;
+  }
+
+  figure {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  p {
+    width: 100%;
+  }
+
+  .dome-text {
+    margin-bottom: 1rem;
+  }
+
+  .bubble-space {
+    margin-bottom: 2rem;
+  }
+
+  .stilts-space {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    width: 65%;
+    text-align: center;
+    margin-left: 4rem;
+  }
+
+}
